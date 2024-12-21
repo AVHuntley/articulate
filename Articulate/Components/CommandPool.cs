@@ -63,7 +63,7 @@ namespace Articulate
 
             #region Move (1)
             // return to formation (1)
-            Command returnToFormation = new Command("FORMUP", new string[] { "return to formation", "form up", "fallback", "fall back", "regroup", "join up", "rally on me", "rally to me" }, new [] { DirectInputEmulator.KeyPress(DirectInputKeys.One), DirectInputEmulator.KeyPress(DirectInputKeys.One) }, subjectRef);
+            Command returnToFormation = new Command("FORMUP", new string[] { "return to formation", "form up", "fallback", "fall back", "regroup", "join up", "rally on me", "rally to me", "with me" }, new [] { DirectInputEmulator.KeyPress(DirectInputKeys.One), DirectInputEmulator.KeyPress(DirectInputKeys.One) }, subjectRef);
             commandObjects.Add("FORMUP", returnToFormation);
             commandSet.Add(returnToFormation.Item);
 
@@ -88,7 +88,7 @@ namespace Articulate
             commandSet.Add(flankRight.Item);
 
             // stop (6)
-            Command stop = new Command("STOP", new string[] { "stop", "hold position", "halt", "stay there", "stay here" }, new [] {  DirectInputEmulator.KeyPress(DirectInputKeys.One),  DirectInputEmulator.KeyPress(DirectInputKeys.Six) }, subjectRef);
+            Command stop = new Command("STOP", new string[] { "stop", "hold position", "halt", "stay there", "stay here", "stay put" }, new [] {  DirectInputEmulator.KeyPress(DirectInputKeys.One),  DirectInputEmulator.KeyPress(DirectInputKeys.Six) }, subjectRef);
             commandObjects.Add("STOP", stop);
             commandSet.Add(stop.Item);
 
@@ -98,7 +98,7 @@ namespace Articulate
             commandSet.Add(waitForMe.Item);
 
             // Find cover (8)
-            Command cover = new Command("COVER", new string[] { "go for cover", "look for cover", "cover", "find cover", "get to cover", "hide" }, new [] {  DirectInputEmulator.KeyPress(DirectInputKeys.One),  DirectInputEmulator.KeyPress(DirectInputKeys.Seven) }, subjectRef);
+            Command cover = new Command("COVER", new string[] { "go for cover", "look for cover", "cover", "find cover", "get to cover", "hide", "take cover" }, new [] {  DirectInputEmulator.KeyPress(DirectInputKeys.One),  DirectInputEmulator.KeyPress(DirectInputKeys.Seven) }, subjectRef);
             commandObjects.Add("COVER", cover);
             commandSet.Add(cover.Item);
 
@@ -190,7 +190,7 @@ namespace Articulate
 
             #region Mount (4)
             // open mount menu
-            Command openMountMenu = new Command("OPENMOUNT", new string[] { "show mount menu", "open mount menu", "show vehicles", "mount menu", "get in vehicle" }, new [] {  DirectInputEmulator.KeyPress(DirectInputKeys.Four) }, subjectRef);
+            Command openMountMenu = new Command("OPENMOUNT", new string[] { "show mount menu", "open mount menu", "show vehicles", "mount menu", "get in vehicle", "get in that vehicle"}, new [] {  DirectInputEmulator.KeyPress(DirectInputKeys.Four) }, subjectRef);
             commandObjects.Add("OPENMOUNT", openMountMenu);
             commandSet.Add(openMountMenu.Item);
 
