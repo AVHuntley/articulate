@@ -349,7 +349,7 @@ namespace Articulate
                 document.Rules.Add(rule);
             }
 
-            Command assignTeam = new Command("ASSIGN", new string[] { "assign", "assign to", "add to", "switch to" }, new [] {  DirectInputEmulator.KeyPress(DirectInputKeys.Nine) }, subjectRef, team);
+            Command assignTeam = new Command("ASSIGN", new string[] { "assign", "assign to", "add to", "switch to", "you're"}, new [] {  DirectInputEmulator.KeyPress(DirectInputKeys.Nine) }, subjectRef, team);
             commandObjects.Add("ASSIGN", assignTeam);
             commandSet.Add(assignTeam.Item);
             #endregion
